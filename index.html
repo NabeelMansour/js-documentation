@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main id="main-doc">
+      <nav id="navbar">
+        <header class="nav-header">
+          <h1>JS Documentation</h1>
+        </header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#Statements" class="nav-link">Statements</a>
+        <a href="#Semicolons" class="nav-link">Semicolons</a>
+        <a href="#What_you_should_already_know" class="nav-link"
+          >What you should already know</a
+        >
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+        <a href="#Hello_world" class="nav-link">Hello world</a>
+      </nav>
+
+      <section class="main-container">
+        <section class="main-section" id="Introduction">
+          <header>
+            <h1>Introduction</h1>
+          </header>
+          <article>
+            <p>
+              JavaScript was initially created to “make web pages alive”. The
+              programs in this language are called scripts. They can be written
+              right in a web page’s HTML and run automatically as the page
+              loads. Scripts are provided and executed as plain text. They don’t
+              need special preparation or compilation to run. In this aspect,
+              JavaScript is very different from another language called Java.
+            </p>
+            <ul>
+              <li>
+                Server-side JavaScript extends the core language by supplying
+                objects relevant to running JavaScript on a server. For example,
+                server-side extensions allow an application to communicate with
+                a database, provide continuity of information from one
+                invocation to another of the application, or perform file
+                manipulations on a server.
+              </li>
+
+              <li>
+                Client-side JavaScript extends the core language by supplying
+                objects to control a browser and its Document Object Model
+                (DOM). For example, client-side extensions allow an application
+                to place elements on an HTML form and respond to user events
+                such as mouse clicks, form input, and page navigation.
+              </li>
+
+              <li>
+                When JavaScript was created, it initially had another name:
+                “LiveScript”. But Java was very popular at that time, so it was
+                decided that positioning a new language as a “younger brother”
+                of Java would help.
+              </li>
+
+              <li>
+                But as it evolved, JavaScript became a fully independent
+                language with its own specification called ECMAScript, and now
+                it has no relation to Java at all.
+              </li>
+
+              <li>
+                Today, JavaScript can execute not only in the browser, but also
+                on the server, or actually on any device that has a special
+                program called the JavaScript engine.
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="Statements">
+          <header>
+            <h1>Statements</h1>
+          </header>
+          <article>
+          <p>
+            Statements are syntax constructs and commands that perform actions.
+          </p>
+          <p>
+            We’ve already seen a statement, <code class="first-alert">alert('Hello, world!')</code>,
+            which shows the message “Hello, world!”.
+          </p>
+          <p>
+            We can have as many statements in our code as we want. Statements
+            can be separated with a semicolon.
+          </p>
+          <p>For example, here we split “Hello World” into two alerts:</p>
+          <code>alert('Hello'); alert('World');</code>
+          <p>
+            Usually, statements are written on separate lines to make the code
+            more readable:
+          </p>
+          <code>alert('Hello');</code>
+          <code>alert('World');</code>
+        </section>
+
+        <section class="main-section" id="Semicolons">
+          <header>
+            <h1>Semicolons</h1>
+          </header>
+          <article></article>
+          <p>
+            A semicolon may be omitted in most cases when a line break exists.
+          </p>
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+          <header>
+            <h1>What you should already know</h1>
+          </header>
+          <article></article>
+          <p>This guide assumes you have the following basic background:</p>
+
+          <ul>
+            <li>
+              A general understanding of the Internet and the World Wide Web
+              (WWW).
+            </li>
+
+            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+
+            <li>
+              Some programming experience. If you are new to programming, try
+              one of the tutorials linked on the main page about JavaScript.
+            </li>
+          </ul>
+        </section>
+
+        <section class="main-section" id="Variables">
+          <header>
+            <h1>Variables</h1>
+          </header>
+          <article></article>
+          <p>
+            A variable is a “named storage” for data. We can use variables to
+            store goodies, visitors, and other data. To create a variable in
+            JavaScript, use the let keyword. The statement below creates (in
+            other words: declares) a variable with the name “message”:
+          </p>
+
+          <code>let message;</code>
+          <p>
+            Now, we can put some data into it by using the assignment operator
+            =:
+          </p>
+
+          <code
+            >let message; message = 'Hello'; // store the string 'Hello' in the
+            variable named message</code
+          >
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+          <header>
+            <h1>JavaScript and Java</h1>
+          </header>
+          <article></article>
+          <p>
+            JavaScript and Java are similar in some ways but fundamentally
+            different in some others. The JavaScript language resembles Java but
+            does not have Java's static typing and strong type checking.
+            JavaScript follows most Java expression syntax, naming conventions
+            and basic control-flow constructs which was the reason why it was
+            renamed from LiveScript to JavaScript. In contrast to Java's
+            compile-time system of classes built by declarations, JavaScript
+            supports a runtime system based on a small number of data types
+            representing numeric, Boolean, and string values. JavaScript has a
+            prototype-based object model instead of the more common class-based
+            object model. The prototype-based model provides dynamic
+            inheritance; that is, what is inherited can vary for individual
+            objects. JavaScript also supports functions without any special
+            declarative requirements. Functions can be properties of objects,
+            executing as loosely typed methods. JavaScript is a very free-form
+            language compared to Java. You do not have to declare all variables,
+            classes, and methods. You do not have to be concerned with whether
+            methods are public, private, or protected, and you do not have to
+            implement interfaces. Variables, parameters, and function return
+            types are not explicitly typed.
+          </p>
+        </section>
+
+        <section class="main-section" id="Hello_world">
+          <header>
+            <h1>Hello world</h1>
+          </header>
+          <article></article>
+          <p>
+            This part of the tutorial is about core JavaScript, the language
+            itself. But we need a working environment to run our scripts and,
+            since this book is online, the browser is a good choice. We’ll keep
+            the amount of browser-specific commands (like alert) to a minimum so
+            that you don’t spend time on them if you plan to concentrate on
+            another environment (like Node.js). We’ll focus on JavaScript in the
+            browser in the next part of the tutorial. So first, let’s see how we
+            attach a script to a webpage. For server-side environments (like
+            Node.js), you can execute the script with a command like "node
+            my.js".
+          </p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
